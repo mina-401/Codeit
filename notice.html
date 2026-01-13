@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항 - GRAY BRICKS COFFEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="notice-page">
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo">GRAY BRICKS COFFEE</h1>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#space" class="nav-link">Space</a>
+        <a href="index.html#menu" class="nav-link">Menu</a>
+        <a href="index.html#beans" class="nav-link">Beans</a>
+        <a href="index.html#news" class="nav-link">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="Notice">
+    <div class="Notice-container">
+      <div class="Notice-header">
+        <a href="index.html?from=notice#news" class="Notice-back-link">← 목록으로</a>
+        <h1 class="Notice-title">루프탑 운영 시간 변경 안내</h1>
+        <div class="Notice-meta">
+          <span class="Notice-date">2026-01-10</span>
+          <span class="Notice-divider">|</span>
+          <span class="Notice-category">공지</span>
+        </div>
+      </div>
+
+      <div class="Notice-content">
+        <p>안녕하세요, GRAY BRICKS COFFEE입니다.</p>
+        <br>
+        <p>고객 여러분께 알려드립니다.</p>
+        <p>2월부터 루프탑의 운영 시간이 다음과 같이 변경됩니다.</p>
+        <br>
+        <p><strong>■ 변경 전:</strong> 오전 10시 - 오후 9시</p>
+        <p><strong>■ 변경 후:</strong> 오전 11시 - 오후 10시</p>
+        <br>
+        <p>더 나은 서비스를 제공하기 위한 조치이오니 양해 부탁드립니다.</p>
+        <br>
+        <p>앞으로도 고객 여러분께 최고의 공간과 서비스를 제공할 수 있도록 노력하겠습니다.</p>
+        <br>
+        <p>감사합니다.</p>
+      </div>
+
+      <div class="Notice-actions">
+        <a href="index.html?from=notice#news" class="Notice-button">목록</a>
+      </div>
+
+      <div class="Notice-navigation">
+        <div class="Notice-nav-item">
+          <span class="Notice-nav-label">다음글</span>
+          <a href="notice.html" class="Notice-nav-link">신메뉴 출시 안내</a>
+        </div>
+        <div class="Notice-nav-item">
+          <span class="Notice-nav-label">이전글</span>
+          <a href="notice.html" class="Notice-nav-link">2월 이벤트 안내</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-rectangle"></div>
+    <div class="footer-rectangle-right"></div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3 class="footer-company">그레이브릭스커피</h3>
+        <p class="footer-info">영업 시간   <span class="footer-divider">|</span> 10 AM - 9 PM</p>
+        <p class="footer-info">본사 주소   <span class="footer-divider">|</span> 경기도 평택시 고덕면 궁2길 27-18</p>
+        <p class="footer-info">본사 연락처 <span class="footer-divider">|</span> 010.0000.0000</p>
+        <p class="footer-info">가맹 문의   <span class="footer-divider">|</span> 010.0000.0001 <span class="footer-divider">|</span>  aaaa@travel.com</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-social">
+          <div class="footer-social-item">
+            <a href="#" class="footer-social-link">
+              <span class="footer-social-label">Instagram</span>
+              <img src="Images/Img_Instagram.png" alt="Instagram" class="footer-social-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // 부드러운 스크롤 애니메이션 함수 (linear)
+    function smoothScrollTo(targetPosition, duration = 600) {
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      let startTime = null;
+      
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // Linear 이징 (일정한 속도)
+        window.scrollTo(0, startPosition + distance * progress);
+        
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+      
+      requestAnimationFrame(animation);
+    }
+
+    // 마우스 휠 이벤트로 부드러운 스크롤
+    let isScrolling = false;
+    let scrollTimeout = null;
+    
+    window.addEventListener('wheel', (e) => {
+      if (isScrolling) return;
+      
+      e.preventDefault();
+      
+      // 휠 방향에 따라 스크롤 양 결정
+      const delta = e.deltaY;
+      const scrollAmount = Math.abs(delta) > 100 ? 150 : 100;
+      const targetPosition = window.scrollY + (delta > 0 ? scrollAmount : -scrollAmount);
+      
+      // 경계 체크
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const finalTarget = Math.max(0, Math.min(targetPosition, maxScroll));
+      
+      isScrolling = true;
+      smoothScrollTo(finalTarget, 300);
+      
+      // 스크롤 완료 후 플래그 리셋
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        isScrolling = false;
+      }, 350);
+    }, { passive: false });
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

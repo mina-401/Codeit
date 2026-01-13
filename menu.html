@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENU - GRAY BRICKS COFFEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo">GRAY BRICKS COFFEE</h1>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#space" class="nav-link">Space</a>
+        <a href="index.html#menu" class="nav-link">Menu</a>
+        <a href="index.html#beans" class="nav-link">Beans</a>
+        <a href="index.html#news" class="nav-link">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="MenuPage">
+    <div class="MenuPage-header">
+      <p class="MenuPage-title">MENU<a href="menu.html" class="Signature-all-link active">ALL</a></p>
+      <div class="MenuPage-categories">
+        <p class="MenuPage-category-list">
+          <span class="MenuPage-category-item active" data-category="coffee">Coffee</span> | 
+          <span class="MenuPage-category-item" data-category="signature">Signature</span> |
+          <span class="MenuPage-category-item" data-category="dessert">Dessert</span> 
+    
+        </p>
+        <p></p>
+        <p class="MenuPage-category-list">
+          <span class="MenuPage-category-item" data-category="latte">Latte</span> | 
+          <span class="MenuPage-category-item" data-category="tea">Tea</span> | 
+          <span class="MenuPage-category-item" data-category="smoothie">Smoothie</span> | 
+          <span class="MenuPage-category-item" data-category="ade">Ade</span> | 
+          <span class="MenuPage-category-item" data-category="juice">Juice</span> | 
+          <span class="MenuPage-category-item" data-category="etc">ETC</span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="MenuPage-content">
+      <div class="MenuPage-menu">
+        <div class="MenuPage-category-content" data-category="coffee">
+          <h3 class="MenuPage-section-title">Coffee</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <!-- 1열 -->
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Coffee Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">에스프레소</h4>
+                  <span class="MenuPage-price">4.5</span>
+                  <p class="MenuPage-item-eng">ESPRESSO</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">아메리카노</h4>
+                  <span class="MenuPage-price">4.5</span>
+                  <p class="MenuPage-item-eng">AMERICANO</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">카푸치노</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">CAPPUCCINO</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">카페라떼</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">CAFE LATTE</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 2열 -->
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Coffee Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">바닐라 라떼</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">VANILLA LATTE</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">헤이즐넛 라떼</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">HAZELNUT LATTE</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">콜드브루</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">COLD BREW</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 3열 -->
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Coffee Image 3">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">카라멜 마끼아또</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">CARAMEL MACCHIATO</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">카페모카</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">CAFE MOCHA</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 4열 -->
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Coffee Image 4">
+              </div>
+              <div class="MenuPage-column-items">
+                <!-- 비어있거나 추가 메뉴 -->
+              </div>
+            </div>
+            
+            <!-- 5열 -->
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Coffee Image 5">
+              </div>
+              <div class="MenuPage-column-items">
+                <!-- 비어있거나 추가 메뉴 -->
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="MenuPage-category-content hidden" data-category="dessert">
+          <h3 class="MenuPage-section-title">Dessert</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <!-- 1열 -->
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Dessert Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">치즈케이크</h4>
+                  <span class="MenuPage-price">6.0</span>
+                  <p class="MenuPage-item-eng">CHEESE CAKE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">애플파이</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">APPLE PIE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 2열 -->
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Dessert Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">초콜릿 브라우니</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">BROWNIE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">스콘</h4>
+                  <span class="MenuPage-price">4.5</span>
+                  <p class="MenuPage-item-eng">SCONE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 3열 -->
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Dessert Image 3">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">마카롱</h4>
+                  <span class="MenuPage-price">3.5</span>
+                  <p class="MenuPage-item-eng">MACARON</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">마들렌</h4>
+                  <span class="MenuPage-price">3.5</span>
+                  <p class="MenuPage-item-eng">MADELEINE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 4열 -->
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Dessert Image 4">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">휘낭시에</h4>
+                  <span class="MenuPage-price">4.0</span>
+                  <p class="MenuPage-item-eng">FINANCIER</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">쿠키</h4>
+                  <span class="MenuPage-price">3.0</span>
+                  <p class="MenuPage-item-eng">COOKIE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 5열 -->
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Dessert Image 5">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">티라미수</h4>
+                  <span class="MenuPage-price">6.5</span>
+                  <p class="MenuPage-item-eng">TIRAMISU</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">와플</h4>
+                  <span class="MenuPage-price">6.0</span>
+                  <p class="MenuPage-item-eng">WAFFLE</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="latte">
+          <h3 class="MenuPage-section-title">Latte</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Latte Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">카페라떼</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">CAFE LATTE</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">바닐라 라떼</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">VANILLA LATTE</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Latte Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">헤이즐넛 라떼</h4>
+                  <span class="MenuPage-price">5.5</span>
+                  <p class="MenuPage-item-eng">HAZELNUT LATTE</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Latte Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Latte Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Latte Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="tea">
+          <h3 class="MenuPage-section-title">Tea</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Tea Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">자몽티</h4>
+                  <span class="MenuPage-price">4.5</span>
+                  <p class="MenuPage-item-eng">JASMINE TEA</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Tea Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">얼그레이</h4>
+                  <span class="MenuPage-price">4.5</span>
+                  <p class="MenuPage-item-eng">EARL GREY</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Tea Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Tea Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Tea Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="smoothie">
+          <h3 class="MenuPage-section-title">Smoothie</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Smoothie Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">딱기 스무디</h4>
+                  <span class="MenuPage-price">6.0</span>
+                  <p class="MenuPage-item-eng">STRAWBERRY SMOOTHIE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Smoothie Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">블루베리 스무디</h4>
+                  <span class="MenuPage-price">6.0</span>
+                  <p class="MenuPage-item-eng">BLUEBERRY SMOOTHIE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Smoothie Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Smoothie Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Smoothie Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="ade">
+          <h3 class="MenuPage-section-title">Ade</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Ade Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">레몬에이드</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">LEMONADE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Ade Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">자몽에이드</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">GRAPEFRUIT ADE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Ade Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Ade Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Ade Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="juice">
+          <h3 class="MenuPage-section-title">Juice</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Juice Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">오렌지주스</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">ORANGE JUICE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Juice Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">사과주스</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">APPLE JUICE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Juice Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Juice Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Juice Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="shake">
+          <h3 class="MenuPage-section-title">Shake</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Shake Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">초콜릿 쉬이크</h4>
+                  <span class="MenuPage-price">6.0</span>
+                  <p class="MenuPage-item-eng">CHOCOLATE SHAKE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Shake Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">바닐라 쉬이크</h4>
+                  <span class="MenuPage-price">6.0</span>
+                  <p class="MenuPage-item-eng">VANILLA SHAKE</p>
+                  <span class="MenuPage-temp">Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Shake Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Shake Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Shake Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="signature">
+          <h3 class="MenuPage-section-title">Signature</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Signature Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">시그니처 메뉴 1</h4>
+                  <span class="MenuPage-price">7.0</span>
+                  <p class="MenuPage-item-eng">SIGNATURE MENU 1</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Signature Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">시그니처 메뉴 2</h4>
+                  <span class="MenuPage-price">7.0</span>
+                  <p class="MenuPage-item-eng">SIGNATURE MENU 2</p>
+                  <span class="MenuPage-temp">Hot / Ice</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 3;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Signature Image 3">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 4;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="Signature Image 4">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 5;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="Signature Image 5">
+              </div>
+              <div class="MenuPage-column-items"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="MenuPage-category-content hidden" data-category="etc">
+          <h3 class="MenuPage-section-title">ETC</h3>
+          
+          <div class="MenuPage-grid-wrapper">
+            <div class="MenuPage-column" style="grid-column: 1;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Food.png" alt="ETC Image 1">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">기타 메뉴 1</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">ETC MENU 1</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+            <div class="MenuPage-column" style="grid-column: 2;">
+              <div class="MenuPage-image-card">
+                <img src="Images/Img_Offer_Service.png" alt="ETC Image 2">
+              </div>
+              <div class="MenuPage-column-items">
+                <div class="MenuPage-item">
+                  <h4 class="MenuPage-item-name">기타 메뉴 2</h4>
+                  <span class="MenuPage-price">5.0</span>
+                  <p class="MenuPage-item-eng">ETC MENU 2</p>
+                  <span class="MenuPage-temp">-</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-rectangle"></div>
+    <div class="footer-rectangle-right"></div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3 class="footer-company">그레이브릭스커피</h3>
+        <p class="footer-info">영업 시간 <span class="footer-divider">|</span> 10 AM - 9 PM</p>
+        <p class="footer-info">본사 주소 <span class="footer-divider">|</span> 경기도 평택시 고덕면 궁2길 27-18</p>
+        <p class="footer-info">본사 연락처 <span class="footer-divider">|</span> 010.0000.0000</p>
+        <p class="footer-info">가맹 문의 <span class="footer-divider">|</span> 010.0000.0001 <span class="footer-divider">|</span>  aaaa@travel.com</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-social">
+          <div class="footer-social-item">
+            <a href="#" class="footer-social-link">
+              <span class="footer-social-label">Instagram</span>
+              <img src="Images/Img_Instagram.png" alt="Instagram" class="footer-social-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Menu Category Toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const categoryItems = document.querySelectorAll('.MenuPage-category-item');
+      const categoryContents = document.querySelectorAll('.MenuPage-category-content');
+      
+      categoryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const category = item.dataset.category;
+          
+          // Remove active class from all items
+          categoryItems.forEach(i => i.classList.remove('active'));
+          
+          // Add active class to clicked item
+          item.classList.add('active');
+          
+          // Hide all content
+          categoryContents.forEach(content => {
+            content.classList.add('hidden');
+          });
+          
+          // Show selected content
+          const selectedContent = document.querySelector(`.MenuPage-category-content[data-category="${category}"]`);
+          if (selectedContent) {
+            selectedContent.classList.remove('hidden');
+          }
+        });
+      });
+
+      // Hamburger menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

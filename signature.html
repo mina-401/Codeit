@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGNATURE - GRAY BRICKS COFFEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo">GRAY BRICKS COFFEE</h1>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#space" class="nav-link">Space</a>
+        <a href="index.html#menu" class="nav-link">Menu</a>
+        <a href="index.html#beans" class="nav-link">Beans</a>
+        <a href="index.html#news" class="nav-link">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="Signature">
+    <div class="Signature-header">
+      <p class="Signature-subtitle">MENU<a href="menu.html" class="Signature-all-link">ALL</a></p>
+      <h2 class="Signature-title">SIGNATURE</h2>
+    </div>
+    
+    <div class="Signature-cards">
+      <div class="Signature-card">
+        <div class="Signature-card-image">
+          <img src="Images/Img_Offer_Food.png" alt="숲 라떼">
+        </div>
+        <div class="Signature-card-content">
+          <h3 class="Signature-card-name">숲 라떼</h3>
+          <p class="Signature-card-price">7.5</p>
+          <p class="Signature-card-eng">Marcha Latte</p>
+          <p class="Signature-card-desc">Marcha / Icecream / Sour</p>
+        </div>
+      </div>
+      
+      <div class="Signature-card">
+        <div class="Signature-card-image">
+          <img src="Images/Img_Offer_Food.png" alt="숲 라떼">
+        </div>
+        <div class="Signature-card-content">
+          <h3 class="Signature-card-name">숲 라떼</h3>
+          <p class="Signature-card-price">7.5</p>
+          <p class="Signature-card-eng">Marcha Latte</p>
+          <p class="Signature-card-desc">Marcha / Icecream / Sour</p>
+        </div>
+      </div>
+      
+      <div class="Signature-card">
+        <div class="Signature-card-image">
+          <img src="Images/Img_Offer_Food.png" alt="숲 라떼">
+        </div>
+        <div class="Signature-card-content">
+          <h3 class="Signature-card-name">숲 라떼</h3>
+          <p class="Signature-card-price">7.5</p>
+          <p class="Signature-card-eng">Marcha Latte</p>
+          <p class="Signature-card-desc">Marcha / Icecream / Sour</p>
+        </div>
+      </div>
+      
+      <div class="Signature-card">
+        <div class="Signature-card-image">
+          <img src="Images/Img_Offer_Food.png" alt="숲 라떼">
+        </div>
+        <div class="Signature-card-content">
+          <h3 class="Signature-card-name">숲 라떼</h3>
+          <p class="Signature-card-price">7.5</p>
+          <p class="Signature-card-eng">Marcha Latte</p>
+          <p class="Signature-card-desc">Marcha / Icecream / Sour</p>
+        </div>
+      </div>
+      
+      <div class="Signature-card">
+        <div class="Signature-card-image">
+          <img src="Images/Img_Offer_Food.png" alt="숲 라떼">
+        </div>
+        <div class="Signature-card-content">
+          <h3 class="Signature-card-name">숲 라떼</h3>
+          <p class="Signature-card-price">7.5</p>
+          <p class="Signature-card-eng">Marcha Latte</p>
+          <p class="Signature-card-desc">Marcha / Icecream / Sour</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-rectangle"></div>
+    <div class="footer-rectangle-right"></div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3 class="footer-company">그레이브릭스커피</h3>
+        <p class="footer-info">영업 시간 <span class="footer-divider">|</span> 10 AM - 9 PM</p>
+        <p class="footer-info">본사 주소 <span class="footer-divider">|</span> 경기도 평택시 고덕면 궁2길 27-18</p>
+        <p class="footer-info">본사 연락처 <span class="footer-divider">|</span> 010.0000.0000</p>
+        <p class="footer-info">가맹 문의 <span class="footer-divider">|</span> 010.0000.0001 <span class="footer-divider">|</span>  aaaa@travel.com</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-social">
+          <div class="footer-social-item">
+            <a href="#" class="footer-social-link">
+              <span class="footer-social-label">Instagram</span>
+              <img src="Images/Img_Instagram.png" alt="Instagram" class="footer-social-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
